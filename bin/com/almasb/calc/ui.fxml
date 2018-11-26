@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+
+<GridPane fx:controller="com.almasb.calc.Controller" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="300" vgap="300" 
+    styleClass="root">
+    
+		<VBox spacing="10">
+	
+		  <StackPane alignment="CENTER">
+		  	<TextField 
+      		GridPane.columnIndex="1" GridPane.rowIndex="1" />
+			<Text fx:id="output" />
+		  </StackPane>
+	
+		  <HBox spacing="10">
+				<Button text="7" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="8" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="9" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="/" prefWidth="50" onAction="#processOperator"/> 
+			</HBox>
+			
+			<HBox spacing="10">
+				<Button text="4" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="5" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="6" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="*" prefWidth="50" onAction="#processOperator"/>
+			</HBox>
+			
+			<HBox spacing="10">
+				<Button text="1" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="2" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="3" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="-" prefWidth="50" onAction="#processOperator"/>
+			</HBox>
+			
+			<HBox spacing="10">
+				<Button text="0" prefWidth="50" onAction="#processNumpad"/>
+				<Button text="." prefWidth="50" onAction="#processNumpad"/>
+				<Button text="+" prefWidth="50" onAction="#processNumpad"/>
+			</HBox>
+			
+		</VBox>
+
+</GridPane>
